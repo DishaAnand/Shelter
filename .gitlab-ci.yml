@@ -13,7 +13,7 @@ backend-build-job:
     - echo "running backend BUILD job"
     - cd backend/
     - mvn clean install -DskipTests
-    - echo "✨ Backend job finished successfully ✅"
+    - echo "Backend job finished successfully ✅"
   artifacts:
     paths:
       - backend/target/*.jar
@@ -52,7 +52,7 @@ frontend-test-job:
     - cd frontend/
     - yarn install
     - yarn test
-    - echo "✨ Frontend test job finished successfully ✅"
+    - echo "Frontend test job finished successfully ✅"
 
 publish:
   image: docker:latest
